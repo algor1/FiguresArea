@@ -16,11 +16,21 @@ namespace FigureasArea
         }
         public double TriangleArea(double a,double b,double c)
         {
-            if (a <= 0 || b <= 0 || c <= 0 || a + b <= c || a + c <= b || b + c <= a) new ArgumentException("Wrong size of triangle sides");
-
+            checkTiangleData(a, b, c);
+            
             double p = (a + b + c) / 2;
             double s = Math.Sqrt(p * (p - a) * (p - b) * (p - c));
             return s;
+        }
+        public bool IsRightTriangle(double a, double b, double c)
+        {
+            checkTiangleData(a, b, c);
+            bool ret = (Math.Pow(a + b) == Math.Pow(c)) || (Math.Pow(a + c) == Math.Pow(b)) || (Math.Pow(b + c) == Math.Pow(a));
+            return ret;
+        }
+        private void checkTiangleData(double a, double b, double c)
+        {
+            if (a <= 0 || b <= 0 || c <= 0 || a + b <= c || a + c <= b || b + c <= a) new ArgumentException("Wrong sizes of triangle sides");
         }
     }
 }
