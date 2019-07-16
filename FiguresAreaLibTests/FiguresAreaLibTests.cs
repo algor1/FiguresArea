@@ -1,67 +1,53 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using FigureasArea;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System;
+using NUnit.Framework;
 
 
 
 namespace FigureasArea.Tests
 {
-    [TestClass()]
+    [TestFixture]   
     public class FiguresAreaLibTests
     {
         private FiguresAreaLib figuresAreaLib;
         
-        [TestInitialize]
+        [SetUp]
         public void TestInitialize()
         {
             figuresAreaLib = new FiguresAreaLib();
         }
         
-        [TestMethod()]
+        [Test]
         public void CircleAreaTest2_4returned()
         {
-            //arrange
             double r = 2;
             double expected = 8*Math.PI;
-            //act
             double actiual = figuresAreaLib.CircleArea(r);
-            //assert
-            Assert.AreEqual(expected, actiual);
+            Assert.That(actiual, Is.EqualTo(expected).Within(0.00001));
         }
 
-        [TestMethod()]
+        [Test]
         public void TriangleAreaTest_2_2_sqrt8_2returned()
         {
-            //arrange
             double a = 2;
             double b = 2;
             double c = Math.Sqrt(8);
             double expected = 2;
             double delta= 0.0000001;
             
-            //act
             double actiual = figuresAreaLib.TriangleArea(a, b, c);
 
-            //assert
-            Assert.AreEqual(expected, actiual,delta);
+            Assert.That(actiual ,Is.EqualTo(expected).Within(delta));
             
         }
-        [TestMethod()]
+        [Test]
         public void IsRightTriangleTest_2_2_sqrt8_true_returned()
         {
-            //arrange
             double a = 2;
             double b = 2;
             double c = Math.Sqrt(8);
-            //act
-            double actiual = figuresAreaLib.IsRightTriangle(a, b, c);
+            bool actiual = figuresAreaLib.IsRightTriangle(a, b, c);
 
-            //assert
-            Assert.IsTrue(actiual);
+            Assert.That(actiual,Is.True);
         }
     }
 }

@@ -25,7 +25,7 @@ namespace FigureasArea
         public bool IsRightTriangle(double a, double b, double c)
         {
             checkTiangleData(a, b, c);
-            bool ret = (Math.Pow(a) + Math.Pow(b) == Math.Pow(c)) || (Math.Pow(a) + Math.Pow(c) == Math.Pow(b)) || (Math.Pow(b) + Math.Pow(c) == Math.Pow(a));
+            bool ret = (Math.Round(a*a,5) + Math.Round(b*b, 5) == Math.Round(c*c, 5)) || (Math.Round(a*a, 5) + Math.Round(c*c, 5) == Math.Round(b*b, 5)) || (Math.Round(b*b, 5) + Math.Round(c*c, 5) == Math.Round(a*a, 5));
             return ret;
         }
         private void checkTiangleData(double a, double b, double c)
