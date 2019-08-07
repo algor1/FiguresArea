@@ -34,7 +34,7 @@ namespace FigureasArea
         {
             if (a <= 0 || b <= 0 || c <= 0 || a + b <= c || a + c <= b || b + c <= a)
             {
-                new ArgumentException("Wrong sizes of triangle sides");
+                throw new ArgumentException("Wrong sizes of triangle sides");
             }
         }
     }
