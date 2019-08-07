@@ -39,3 +39,15 @@ D:\igor\prog\C#\FiguresArea\FiguresArea\FiguresAreaLibTests\bin\Debug\nunit.fram
 D:\igor\prog\C#\FiguresArea\FiguresArea\FiguresAreaLibTests\obj\Debug\FiguresAreaLibTests.csproj.CopyComplete
 D:\igor\prog\C#\FiguresArea\FiguresArea\FiguresAreaLibTests\obj\Debug\FiguresAreaLibTests.dll
 D:\igor\prog\C#\FiguresArea\FiguresArea\FiguresAreaLibTests\obj\Debug\FiguresAreaLibTests.pdb
+D:\prog\FiguresArea\FiguresAreaLibTests\bin\Debug\FiguresAreaLibTests.dll
+D:\prog\FiguresArea\FiguresAreaLibTests\bin\Debug\FiguresAreaLibTests.pdb
+D:\prog\FiguresArea\FiguresAreaLibTests\bin\Debug\ClassLibrary1.dll
+D:\prog\FiguresArea\FiguresAreaLibTests\bin\Debug\nunit.framework.dll
+D:\prog\FiguresArea\FiguresAreaLibTests\bin\Debug\ClassLibrary1.pdb
+D:\prog\FiguresArea\FiguresAreaLibTests\bin\Debug\nunit.framework.pdb
+D:\prog\FiguresArea\FiguresAreaLibTests\bin\Debug\nunit.framework.xml
+D:\prog\FiguresArea\FiguresAreaLibTests\obj\Debug\FiguresAreaLibTests.csprojAssemblyReference.cache
+D:\prog\FiguresArea\FiguresAreaLibTests\obj\Debug\FiguresAreaLibTests.csproj.CoreCompileInputs.cache
+D:\prog\FiguresArea\FiguresAreaLibTests\obj\Debug\FiguresAreaLibTests.csproj.CopyComplete
+D:\prog\FiguresArea\FiguresAreaLibTests\obj\Debug\FiguresAreaLibTests.dll
+D:\prog\FiguresArea\FiguresAreaLibTests\obj\Debug\FiguresAreaLibTests.pdb

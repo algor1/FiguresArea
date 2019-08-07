@@ -17,7 +17,7 @@ namespace FigureasArea.Tests
         }
         
         [Test]
-        public void CircleAreaTest2_4returned()
+        public void CircleArea_Radius2_return8PI()
         {
             double r = 2;
             double expected = 8*Math.PI;
@@ -26,28 +26,26 @@ namespace FigureasArea.Tests
         }
 
         [Test]
-        public void TriangleAreaTest_2_2_sqrt8_2returned()
+        [TestCase (2,2,2.828427,2)]
+        public void TriangleAreaTest_CorresctSides_returnedCorrect(double a,double b, double c,double expected)
         {
-            double a = 2;
-            double b = 2;
-            double c = Math.Sqrt(8);
-            double expected = 2;
-            double delta= 0.0000001;
-            
             double actiual = figuresAreaLib.TriangleArea(a, b, c);
-
-            Assert.That(actiual ,Is.EqualTo(expected).Within(delta));
-            
+            Assert.That(actiual ,Is.EqualTo(expected).Within(0.0001));
         }
-        [Test]
-        public void IsRightTriangleTest_2_2_sqrt8_true_returned()
-        {
-            double a = 2;
-            double b = 2;
-            double c = Math.Sqrt(8);
-            bool actiual = figuresAreaLib.IsRightTriangle(a, b, c);
 
+        [Test]
+        [TestCase(2, 2, 2.828427)]
+        public void IsRightTriangleTest_CorrectSides_ReturnedTrue(double a, double b, double c)
+        {
+            bool actiual = figuresAreaLib.IsRightTriangle(a, b, c);
             Assert.That(actiual,Is.True);
+        }
+
+        [Test]
+        [TestCase(2, 2, 6)]
+        public void TriangleAreaTest_IncorresctSides_returnedExeption(double a, double b, double c)
+        {
+            Assert.Throws<ArgumentException>(() => figuresAreaLib.TriangleArea(a, b, c));
         }
     }
 }

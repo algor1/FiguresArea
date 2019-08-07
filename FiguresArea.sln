@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.705
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FiguresAreaLibTests", "FiguresAreaLibTests\FiguresAreaLibTests.csproj", "{E4434E55-03AD-49BA-A4EE-6CB72072600D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FiguresAreaLib.Tests", "FiguresAreaLibTests\FiguresAreaLib.Tests.csproj", "{E4434E55-03AD-49BA-A4EE-6CB72072600D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FiguresAreaLib", "FiguresAreaLib\FiguresAreaLib.csproj", "{B1D54A60-43BF-4B38-BDD6-3F97025FBC34}"
 EndProject

@@ -25,12 +25,17 @@ namespace FigureasArea
         public bool IsRightTriangle(double a, double b, double c)
         {
             checkTiangleData(a, b, c);
-            bool ret = (Math.Round(a*a,5) + Math.Round(b*b, 5) == Math.Round(c*c, 5)) || (Math.Round(a*a, 5) + Math.Round(c*c, 5) == Math.Round(b*b, 5)) || (Math.Round(b*b, 5) + Math.Round(c*c, 5) == Math.Round(a*a, 5));
+            bool ret = (Math.Round(a*a,5) + Math.Round(b*b, 5) == Math.Round(c*c, 5)) ||
+                        (Math.Round(a*a, 5) + Math.Round(c*c, 5) == Math.Round(b*b, 5)) ||
+                        (Math.Round(b*b, 5) + Math.Round(c*c, 5) == Math.Round(a*a, 5));
             return ret;
         }
         private void checkTiangleData(double a, double b, double c)
         {
-            if (a <= 0 || b <= 0 || c <= 0 || a + b <= c || a + c <= b || b + c <= a) new ArgumentException("Wrong sizes of triangle sides");
+            if (a <= 0 || b <= 0 || c <= 0 || a + b <= c || a + c <= b || b + c <= a)
+            {
+                new ArgumentException("Wrong sizes of triangle sides");
+            }
         }
     }
 }
